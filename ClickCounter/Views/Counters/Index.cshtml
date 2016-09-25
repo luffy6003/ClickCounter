@@ -1,0 +1,15 @@
+﻿@model ClickCounter.Models.CountersControllerVM
+
+@{
+    Layout = "~/Views/Shared/_DefaultLayout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Model.ClickCounter
+    @Html.Hidden("counterId", Model.CounterId)
+    <br/>
+    <input type="submit" value="Click" />
+        
+}

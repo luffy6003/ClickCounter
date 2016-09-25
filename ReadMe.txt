@@ -1,0 +1,1 @@
+In ../ClickCounter/web.config file kindly look for the <connectionstrings> tag and change the connectionstring appropriately to run the application.
